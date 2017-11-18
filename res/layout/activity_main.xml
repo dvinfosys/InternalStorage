@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaksys_49.internalstorage.MainActivity">
+
+    <TextView
+        android:id="@+id/prevExpence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Previous Expence "
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        tools:layout_editor_absoluteY="389dp"
+        tools:layout_editor_absoluteX="136dp"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <TextView
+        android:id="@+id/txtfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/prevExpence"
+        android:layout_toStartOf="@+id/prevExpence"
+        android:layout_marginTop="49dp" />
+
+    <EditText
+        android:id="@+id/etfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_alignBottom="@+id/txtfood"
+        android:layout_alignStart="@+id/btncalculate" />
+
+    <TextView
+        android:id="@+id/txtshopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/txtfood"
+        android:layout_below="@+id/txtfood"
+        android:layout_marginTop="45dp"
+        android:text="Shopping" />
+
+    <EditText
+        android:id="@+id/etshopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/txtshopping"
+        android:layout_alignBottom="@+id/txtshopping"
+        android:layout_alignStart="@+id/etfood" />
+
+    <TextView
+        android:id="@+id/txtfuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/txtshopping"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="9dp"
+        android:text="Fuel" />
+
+    <EditText
+        android:id="@+id/etfuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/etshopping"
+        android:layout_marginEnd="7dp" />
+
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/txtshopping"
+        android:layout_below="@+id/etfuel"
+        android:layout_marginTop="50dp"
+        android:text="Telephone" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_alignTop="@+id/txtphone"
+        android:layout_alignStart="@+id/btncalculate" />
+
+
+</RelativeLayout>
